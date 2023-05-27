@@ -1,0 +1,23 @@
+@import './SASS/mixins.scss';
+@import './SASS/variabls.scss';
+
+
+.mainBox {
+    @apply w-4/5;
+    @include flexy(center, center);
+}
+
+.box {
+    @apply border-4 rounded-2xl;
+    border-color: $borderColor;
+}
+
+.headerBox {
+    @apply border-b-2;
+    border-color: $borderColor;
+    @include flexy(center, flex-end);
+}
+
+.contentBox {
+    @include flexy(center, center);
+}

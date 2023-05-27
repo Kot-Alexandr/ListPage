@@ -1,0 +1,24 @@
+@import './../../SASS/mixins.scss';
+@import './../../SASS/variabls.scss';
+
+
+.headersTabs {
+    @apply mt-1 flex;
+}
+
+.tabsStyle {
+    @include flexy(center, '');
+    @include text($bigTextSize, "Franklin", $bigTextColor, normal);
+
+@apply w-32 border-2 border-b-0;
+    border-color: $borderColor;
+    border-radius: 10px 10px 0 0;
+   
+    &:hover {
+        background-color: $chosenLink;
+    }
+}
+
+.active {
+        background-color: $hoverLink;
+}

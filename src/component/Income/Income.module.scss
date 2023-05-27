@@ -1,0 +1,30 @@
+@import './../../SASS/mixins.scss';
+@import './../../SASS/variabls.scss';
+
+.tableHead {
+    @include flexy (space-between, '');
+    @apply w-80 mt-7 border-b;
+    border-color: $borderColor;
+}
+
+.labelTable {
+    @include flexy (center, '');
+    @apply mr-12 ml-12;
+    @include text ($bigTextSize, 'Franklin Gothic Medium', $bigTextColor, normal);
+}
+
+.usersTab {
+    @include flexy (space-between, '');
+    @apply w-80 border-b;
+    border-color: $regularTextColor;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.usersData {
+    @include flexy (center, '');
+    @apply mr-7 ml-7;
+    @include text($regularTextSize, 'Franklin Gothic Medium', $regularTextColor, normal);
+}
