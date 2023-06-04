@@ -1,0 +1,7 @@
+@import './../../SASS/mixins.scss';
+@import './../../SASS/variabls.scss';
+
+.FirstPageStyle {
+    @include flexy (center, center);
+    @include text (32px, 'Franklin Gothic Medium', rgb(202, 226, 51), normal);
+}
